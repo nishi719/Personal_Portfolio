@@ -1,0 +1,303 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background-color:#78084d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.header-content {
+    flex: 1;
+    text-align: left;
+}
+
+.header-content {
+    flex: 1;
+    text-align: left;
+}
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+#logo {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* About section styles */
+#about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.about-content {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px; /* Add spacing between content and image */
+}
+
+
+.about-image {
+    max-width: 17%;
+    border-radius: 100%;
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+#about p {
+    font-size: 21px;
+    margin-top: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Skills section styles */
+
+#skills {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.skill {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.skill-name {
+    font-weight: bold;
+    font-size: 18px;
+    flex: 1;
+}
+
+.skill-bar {
+    flex: 2;
+}
+
+.bar {
+    height: 20px;
+    border-radius: 5px;
+}
+
+/* Add hover effect for skills bars */
+.bar:hover {
+    transform: scale(1.1);
+}
+
+/* Additional styling for each skill bar */
+.skill .skill-bar .bar {
+    transition: width 1s ease;
+}
+
+
+/* Projects section styles */
+#projects {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.project {
+    margin: 20px;
+    display: inline-block;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project img {
+    max-width: 100%;
+    border-radius: 5px;
+    
+}
+.project h2{
+    font-size: 40px;
+}
+.project h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.project p{
+    text-align: center;
+    margin: 10px 0;
+}
+.project p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links a {
+    text-decoration: none;
+    color:#fff;
+    background-color:#78084d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.project-links :hover{
+    background-color: #333;
+}
+/* Resume section styles */
+#resume {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #fff;
+    background-color:#78084d;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+#resume a:hover {
+    background-color:#333;
+}
+
+/* Contact section styles */
+#contact {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color:  #890a5f;
+    color: #04151c;
+    text-align: center;
+    padding: 20px 0;
+}
+/* Additional styles for the footer section */
+.footer-content {
+    text-align: center;
+    margin: 20px;
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0 15px;
+}
+
+.additional-links {
+    text-align: center;
+    margin: 20px;
+}
+
+.additional-links a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 15px;
+}
+.social-icons :hover {
+    background-color: #04607a;
+
+}
+.additional-links :hover{
+    color:  #04607a;
+
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header #logo {
+        font-size: 24px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    #about p {
+        font-size: 16px;
+    }
+
+    #skills h2 {
+        font-size: 24px;
+    }
+
+    #skills li {
+        font-size: 16px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    #resume a {
+        font-size: 16px;
+    }
+
+    #contact p {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
